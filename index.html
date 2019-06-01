@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FLIGHT SEARCH ENGINE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+
+    <script async type="text/javascript" src="js/datepicker.js"></script>
+    <script async type="text/javascript" src="js/tab.js"></script>
+    <script async type="text/javascript" src="js/flight.js"></script>
+</head>
+
+<body>
+    <div class="header--bar">
+        <div class="header-logo">
+            <span class="header-logo-flight">FLIGHT</span>
+            <span class="header-logo-search">SEARCH ENGINE</span>
+        </div>
+
+    </div>
+    <div class="page">
+        <aside class="page__aside">
+            <!-- Nav tabs -->
+            <div class="nav nav-tabs">
+                <span class="active--tab one-way-tab" id="one-way-tab"><a>One way</a></span>
+                <span class="return-tab" id="return-tab"><a>Return</a></span>
+            </div>
+            <div class="form--group">
+                <input type="text" placeholder="Enter Orgin" class="form--control" id="orgin">
+            </div>
+            <div class="form--group">
+                <input type="text" placeholder="Enter Destination" class="form--control" id="destination">
+            </div>
+            <div class="form--group">
+                <input id="datefrom" type="text" class="form--control" placeholder="Departure Date" />
+            </div>
+            <div class="form--group" id="return-date">
+                <input id="dateto" type="text" class="form--control" placeholder="Return Date" />
+            </div>
+            <div class="form--group">
+                <select placeholder="Passengers" class="form--control" id="passengers">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form--group search--button">
+                <a class="btn" id="searchBtn">Search</a>
+                <a class="btn" id="resetBtn">Reset</a>
+            </div>
+
+        </aside>
+        <div class="page__content">
+            
+        </div>
+    </div>
+</body>
+
+</html>

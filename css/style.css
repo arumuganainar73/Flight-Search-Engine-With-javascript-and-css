@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+    font-size: 14px;
+}
+
+.header--bar {
+    flex: 0 0 20rem;
+    width: 100%;
+    background-color: #121111;
+    height: 50px;
+  }
+.header-logo{
+display: grid;
+}
+.header-logo-flight{
+    float: left;
+    padding: 2px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    width: 25%;
+    text-align: center;
+}
+.header-logo-search{
+    float: left;
+     color: white;
+    text-decoration: none;
+    font-size: 8px;
+    width: 25%;
+    text-align: center;
+
+}
+/*
+--------------------------------------------------------
+Body css
+--------------------------------------------------------
+*/
+body {
+    min-height: 100%;
+    padding: 2rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+}
+
+/*
+--------------------------------------------------------
+Tabbar css
+--------------------------------------------------------
+*/
+.nav-tabs{
+    padding: 2rem;
+}
+.nav-tabs .one-way-tab{
+    border: 2px solid #6a4f4f;
+    padding: 0.5rem;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+.nav-tabs .return-tab{
+    border: 2px solid #6a4f4f;
+    padding: 0.5rem;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+.active--tab{
+    background-color: #121111;
+}
+
+/*
+--------------------------------------------------------
+Page  css
+--------------------------------------------------------
+*/
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*
+--------------------------------------------------------
+Page search bar css
+--------------------------------------------------------
+*/
+.page__aside {    
+    flex: 0 0 20rem;
+    background-color: #460b0b;
+    padding: 1rem 1.5rem;
+}
+
+.form--group {
+    margin-bottom: 1rem;
+}
+
+.from--group:last-of-type {
+    margin-bottom: 0;
+}
+
+.form--label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form--control {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 3px;  
+    width: 100%;  
+    padding: 0.5rem 1rem;
+}
+
+.btn {
+    background-color: #F44336;
+    border-radius: 3px;
+    display: inline-block;
+    color: #fff;
+    padding: 0.8rem 1rem;    
+    line-height: 1;
+    text-transform: uppercase;
+}
+.search--button{
+    margin-left: 2rem;
+}
+
+/*
+--------------------------------------------------------
+Page content css
+--------------------------------------------------------
+*/
+.page__content {
+    padding: 1rem 0 0 1.5rem;
+    flex: 1;
+}
+
+.panel{
+    margin-bottom: 1rem;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    position: relative;
+    border: 2px solid #dadada;
+    border-radius: 5px;
+    display: block;
+}
+.price{
+    font-size: 18px;
+    font-weight: bold;
+}
+.panel--body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.panel--list{
+    flex-basis: 33.33%;
+}
+.panel-content{
+    display: grid;
+}
+.list__container {
+    list-style: none;
+    display: block;
+}
+
+/*
+--------------------------------------------------------
+Responsive css
+--------------------------------------------------------
+*/
+
+@media only screen and (max-width: 460px) {
+    .page__content {
+        padding: 1rem 0 0 1.5rem;
+        flex: 1;
+    }
+    .panel{
+        margin-bottom: 1rem;
+        background-color: #f2f2f2;
+        padding: 1rem;
+        position: relative;
+        border: 2px solid #dadada;
+        border-radius: 5px;
+        display: block;
+    }
+    .panel--body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .panel--list{
+        padding: 0 0 1rem 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 460px) and (max-width: 768px) {
+    .panel{
+        margin-bottom: 1rem;
+        background-color: #f2f2f2;
+        padding: 1rem;
+        position: relative;
+        border: 2px solid #dadada;
+        border-radius: 5px;
+        display: block;
+    }
+    .panel--body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .panel--list{
+        flex-basis: 50%;
+        padding: 0 0 1rem 0;
+    }
+} 
